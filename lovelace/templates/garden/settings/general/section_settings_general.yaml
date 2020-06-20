@@ -169,21 +169,21 @@ entities:
       #-------------------------
 
 
-      #=== Controller WiFi Signal
-      - type: custom:config-template-card
-        variables:
-          - states['input_text.irrigation_external_sensor_controller_wifi'].state
-        entities:
-          - input_text.irrigation_external_sensor_controller_wifi
-          - ${states['input_text.irrigation_external_sensor_controller_wifi'].state}
-          - input_text.irrigation_ui_font_family
-        card:
-          !include
-            - item_settings_controller_wifi_signal.yaml
-            - entity: "${vars[0]}"
-              name: Irrigation Controller WiFi Signal Strength
-              tap_action: none
-              padding: 0.5em 0em 0.5em 0em
+      # #=== Controller WiFi Signal
+      # - type: custom:config-template-card
+      #   variables:
+      #     - states['input_text.irrigation_external_sensor_controller_wifi'].state
+      #   entities:
+      #     - input_text.irrigation_external_sensor_controller_wifi
+      #     - ${states['input_text.irrigation_external_sensor_controller_wifi'].state}
+      #     - input_text.irrigation_ui_font_family
+      #   card:
+      #     !include
+      #       - item_settings_controller_wifi_signal.yaml
+      #       - entity: "${vars[0]}"
+      #         name: Irrigation Controller WiFi Signal Strength
+      #         tap_action: none
+      #         padding: 0.5em 0em 0.5em 0em
 
       #=== Testing mode warning
       - !include
