@@ -3,11 +3,19 @@ title: Garden
 path: garden
 icon: mdi:sprinkler-variant
 
+<<<<<<< HEAD
 # ADD this line if columns not displaying correctly
 panel: true
 cards:
 
   # ADD these three lines if columns not displaying correctly
+=======
+# Used in conjunctione with layout-card
+panel: true
+cards:
+
+  # Display columns correctly using layout-card
+>>>>>>> b9b8910cc670fe149c57a55c2ae8a3f2d5d82c13
   - type: custom:layout-card
     layout: horizontal
     cards:
